@@ -1,0 +1,53 @@
+main {
+    background: #fbe6e2;
+    width: 85%;
+    min-height: 500px;
+    /*margin: 50px 50px; le premier chiffre est la marge avec le haut et bas, le deuxieme chiffre est la marge de gauche à droite */
+    margin: auto auto ;/* pour que les marges soient identiques quoi qu'il arrive des deux cotes, en haut et bas et gauche àdroite*/
+    padding: 15px; /* si on met juste un chiffre, ce chiffre la de 15px representera tous les cotés, haut droite bas gauche, dans le sens des aiguilles d'une montre*/
+    border-radius: 10px;
+}
+
+
+
+*
+{
+margin: 0;
+padding:0;
+}
+
+
+
+body {
+background: url(./assets/peXels.jpg) fixed center/cover; /* fixed empechera limage de bouger, mais le contenu de la page bougera normalement*/
+/*height: 100vh;
+/*overflow: hidden; empecher le scrolling */
+}
+
+
+
+h1 {
+    text-transform: uppercase; /* transformer le texte en majuscule */
+    letter-spacing: 12px; /* faire un espace entre les lettres */
+    font-size: 2.5rem;
+    color: darkblue;
+    text-shadow: 5px 0 0 darkcyan;
+    text-align: center;
+}
+
+
+.positioning{
+border: 2px solid skyblue;
+margin-top: 45px;
+}
+
+
+
+#cercle{
+height: 60px;
+width: 60px;
+background: skyblue;
+border-radius: 50%;
+top: 0;
+
+}
