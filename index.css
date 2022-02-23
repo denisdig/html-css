@@ -34,20 +34,54 @@ h1 {
     text-shadow: 5px 0 0 darkcyan;
     text-align: center;
 }
-
-
 .positioning{
-border: 2px solid skyblue;
-margin-top: 45px;
+/* cela affectera la classe positioning mais pas la classe flexbox, qui est associé dans le css d'apres*/
+position: relative;
 }
 
+.positioning, /* cela va permettre de déclarer les memes valuers pour el sdeux classes */
+.flexbox{
+border: 2px solid skyblue;
+margin-top: 45px;
+
+}
+
+ul {
+display: flex;
+justify-content: space-around; /*flexbox.help*/
+
+}
+
+li{
+height: 160px;
+width: 160px;
+list-style-type: none;
+font-size: 0.7rem;
+background: turquoise;
+}
 
 
 #cercle{
 height: 60px;
-width: 60px;
+width: 60px; /* width: 35% , grace à sa position absolute par rapport à son parent en relative, le width restera tout le temps quoi qu'il arrive à 35% de son parent*/
 background: skyblue;
 border-radius: 50%;
 top: 0;
 
+}
+
+
+
+
+
+.grid-container
+{
+display: grid;
+grid-template-columns: 30% 50% 10%;
+}
+
+
+#img-css{
+height: 90%;
+width: 90%;
 }
