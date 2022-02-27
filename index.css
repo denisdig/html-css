@@ -1,4 +1,16 @@
+:root
+{
+--color1 : yellow;
+--color2 : red;
+--color3 : white;
+--color4 : pink;
+}
+
+
 main {
+
+    /*width: calc(100% - 50px) cette facon va permettre de faire un calcul en quelque sorte, ici, cela va prendre 100% de la width et enlever 50px en tout sur la width, donc 25px margin a gauche et 25px margin a droite*/
+    /*backdrop-filter: blur(5px) cela va permettre de flouter le fond derriere de cinq pixels*/
     background: #fbe6e2;
     width: 85%;
     min-height: 500px;
@@ -10,12 +22,12 @@ main {
 
 
 
-*
+/*
 {
 margin: 0;
 padding:0;
 }
-
+*/
 
 
 body {
@@ -39,6 +51,10 @@ h1 {
 position: relative;
 }
 
+.positioning:before{
+ content:"un texte";
+background : var(--color1);
+}
 .positioning, /* cela va permettre de déclarer les memes valuers pour el sdeux classes */
 .flexbox{
 border: 2px solid skyblue;
@@ -74,14 +90,22 @@ top: 0;
 
 
 
-.grid-container
+/*.grid-container
 {
 display: grid;
 grid-template-columns: 30% 50% 10%;
-}
+}*/
 
 
 #img-css{
 height: 90%;
 width: 90%;
+}
+
+
+
+p:before{
+content:"un texte";
+background : var(--color1);
+
 }
